@@ -1,1 +1,97 @@
-//
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+//@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// Layouts
+@import 'sidebar';
+
+// Datatable
+@import '~datatables.net-bs4/css/dataTables.bootstrap4';
+
+// Custom UI
+@import 'select2';
+@import 'calendar';
+
+body {
+	background-color: #fff;
+}
+
+.row-breadcrumb {
+    background-color: #e9ecef;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a{
+	color: #6c757d;
+}
+
+.breadcrumb-item.active{
+	color: $primary;
+}
+
+.bg-status-new {
+	font-weight: bold;
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: $primary;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+	font-weight: bold;
+}
+
+.input-required {
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+	color: #e3342f;
+
+	i {
+		font-size: 0.9em;
+	}
+}
+
+.table {
+	font-size: $font-size-base;
+
+	td {
+		vertical-align: middle;
+	}
+}
+
+.nazrol-mapview-control{
+	&.is-invalid {
+		border-color: #e3342f;
+	}
+	&.is-valid {
+		border-color: #38c172;
+	}
+}
+
+.notification-item {
+	cursor: pointer;
+}
+
+.notification-item:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+//$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.85rem;
+$line-height-base: 1.4;
+
+// Colors
+$primary: #3b9ad0;
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$grey 			: #495057;
+$light-grey 	: #dddddd;
+$form-grey 		: #ced4da;
+$brand-red 		: #EE3624;
+
+$theme-colors: (
+  "light-primary" 	: lighten($primary, 30%),
+  "light2-primary" 	: lighten($primary, 40%),
+  "brand-red" 		  : $brand-red,
+  "light-brand-red" : lighten($brand-red, 40%),
+  "grey" 			    : $grey,
+  "light-grey" 		: $light-grey,
+  "form-grey" 		: $form-grey,
+  "blue" 			    : $blue,
+  "light-blue" 		: lighten($blue, 40%),
+  "light-danger"	: lighten(#e3342f, 20%),
+  "status-new" 		    : $blue,
+  "status-pending"    : $grey,
+  "status-rejected"   : $red,
+  "status-completed"  : $green,
+  "completed"     : $green,
+  "rejected"      : $red
+);

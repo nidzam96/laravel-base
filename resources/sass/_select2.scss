@@ -1,0 +1,55 @@
+@import '~select2/src/scss/core';
+@import '~@ttskch/select2-bootstrap4-theme/src/layout';
+
+.select2-container--bootstrap4.select2-container--focus .select2-selection {
+	border-color: $primary;
+
+	.select2-selection__arrow {
+		b{
+			&:before{
+				@extend .text-primary;
+			}
+		}
+	}
+}
+
+.select2-container {
+	background-color: #fff;
+
+	.select2-results__option,
+	.select2-selection__rendered {
+		color: $input-color;
+
+		&.select2-results__option--highlighted {
+			color: #fff;
+		}
+	}
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
+	
+	position: absolute;
+	top: 25%;
+	right: 5px;
+
+	b{
+		border: none;
+		position: unset;
+		top: unset;
+		right: unset;
+		margin: 0px;
+
+		&:before{
+			@extend .text-muted;
+			@extend .fas;
+			content: "\f078";
+		}
+	}
+}
+
+.custom-select2 {
+	select {
+		display: none;
+	}
+}
+
